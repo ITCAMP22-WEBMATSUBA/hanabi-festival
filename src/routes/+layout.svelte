@@ -11,4 +11,5 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<Coin />
 {@render children()}
