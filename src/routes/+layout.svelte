@@ -1,4 +1,6 @@
 <script>
+	import "../main.css"
+
 	import favicon from '$lib/assets/favicon.svg';
 	import Coin from '$lib/component/Coin.svelte';
 	let { children } = $props();
@@ -6,9 +8,9 @@
 	import "../app.css";
 </script>
 
-<Coin coins={coins}/>
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<Coin />
 {@render children()}
