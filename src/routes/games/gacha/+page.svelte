@@ -33,8 +33,8 @@
 </script>
 
 
-<h1 class="font-bold text-2xl text-center">Gacha</h1>
-<p class="text-center">สุมครั้งละ 10 coin</p>
+<h1 class="p-5 font-bold text-2xl text-center">Gacha</h1>
+<p class="text-center p-5">สุ่มครั้งละ 10 coin</p>
 <div class="flex justify-center min-h-75">
     <div>
     {#if !yay}
@@ -53,13 +53,13 @@
     {/if}
 
     {#if yay}
-    <p>ยินดีด้วย! อย่าลืมไปรับของรางวัล</p>
+    <p class="p-5">ยินดีด้วย! อย่าลืมไปรับของรางวัล</p>
     {/if}
     {/if}
 
     <button onclick={random} class="bg-black text-white px-4 
-py-2 rounded-2xl w-full mt-2 hover:bg-white hover:text-black duration-300
-cursor-pointer border-1">Random</button>
+py-2 rounded-2xl w-full mt-2  hover:text-black hover:bg-pink-300 duration-300
+cursor-pointer border-1 mt-10">Random</button>
     </div>
 </div>
 
