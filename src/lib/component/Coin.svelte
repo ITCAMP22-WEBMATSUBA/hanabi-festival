@@ -2,12 +2,12 @@
     import { onMount } from "svelte";
 
     let {coins = $bindable(0)} = $props();
-    let coin = 0;
+    let coin = $state(0);
     onMount(()=>{
-        coin = JSON.parse(localStorage.getItem("coins")) || 0;
+        coin = parseInt(localStorage.getItem("coins")) || 0;
     })
 </script>
 
-<p>Coin: {0}</p>
+<p class="h-10 bg-">Coin: {coin}</p>
 
 
