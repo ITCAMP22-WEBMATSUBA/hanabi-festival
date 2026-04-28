@@ -1,13 +1,12 @@
 <script>
     import { onMount } from "svelte";
 
-    let {coins = $bindable(0)} = $props();
-    let coin = 0;
+    let {coins = $bindable()} = $props()
     onMount(()=>{
-        coin = JSON.parse(localStorage.getItem("coins")) || 0;
+        coins = JSON.parse(localStorage.getItem('coins'))
     })
 </script>
 
-<p>Coin: {0}</p>
+<p>Coin: {coins}</p>
 
 
