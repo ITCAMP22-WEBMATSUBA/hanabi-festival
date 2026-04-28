@@ -3,6 +3,7 @@
 	import Coin from '$lib/component/Coin.svelte';
 	let { children } = $props();
 	let coins = 10;
+	import "../app.css";
 </script>
 
 <Coin coins={coins}/>
